@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" styleClass="mainPane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPaneController">
+
+    <left>
+        <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="300.0" styleClass="leftPane">
+            <content>
+                <BorderPane maxWidth="-Infinity" minWidth="-Infinity" prefWidth="298.0" styleClass="leftPaneTitle">
+                    <top>
+                        <HBox BorderPane.alignment="TOP_LEFT">
+                            <BorderPane.margin>
+                                <Insets bottom="15.0" left="25.0" right="15.0" top="20.0" />
+                            </BorderPane.margin>
+                            <children>
+                                <ImageView fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@mainLogo.png" />
+                                    </image>
+                                </ImageView>
+                                <VBox>
+                                    <children>
+                                        <Label prefWidth="200.0" styleClass="dTitleTop" text="Your">
+                                            <VBox.margin>
+                                                <Insets left="20.0" top="5.0" />
+                                            </VBox.margin></Label>
+                                        <Label prefWidth="200.0" styleClass="dTitleTop" text="Directories">
+                                            <VBox.margin>
+                                                <Insets left="20.0" />
+                                            </VBox.margin></Label>
+                                    </children></VBox>
+                            </children>
+                        </HBox>
+                    </top>
+                    <center>
+                  <VBox BorderPane.alignment="TOP_LEFT">
+                     <BorderPane.margin>
+                        <Insets left="20.0" top="7.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="32.0" onMouseClicked="#chooseNewDirEvent" pickOnBounds="true" preserveRatio="true" styleClass="chooseNewDir">
+                                 <image>
+                                    <Image url="@chooseNewIcon.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label onMouseClicked="#chooseNewDirEvent" styleClass="chooseNewDir" text="Change Directory">
+                                 <font>
+                                    <Font name="Calibri Light" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                         <HBox>
+                             <children>
+                                 <ImageView fitHeight="150.0" fitWidth="32.0" onMouseClicked="#chooseFavouritePhotoEvent" pickOnBounds="true" preserveRatio="true" styleClass="chooseNewDir">
+                                     <image>
+                                         <Image url="@favouritedLogo.png" />
+                                     </image>
+                                     <HBox.margin>
+                                         <Insets left="15.0" />
+                                     </HBox.margin>
+                                 </ImageView>
+                                 <Label onMouseClicked="#chooseFavouritePhotoEvent" styleClass="chooseNewDir" text="Favourite Photos">
+                                     <font>
+                                         <Font name="Calibri Light" size="18.0" />
+                                     </font>
+                                     <HBox.margin>
+                                         <Insets left="10.0" top="4.0" />
+                                     </HBox.margin>
+                                 </Label>
+                             </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                         </HBox>
+                         <HBox>
+                             <children>
+                                 <ImageView fitHeight="150.0" fitWidth="32.0" onMouseClicked="#seeAllTagsEvent" pickOnBounds="true" preserveRatio="true" styleClass="chooseNewDir">
+                                     <image>
+                                         <Image url="@allTagsIcon.png" />
+                                     </image>
+                                     <HBox.margin>
+                                         <Insets left="15.0" />
+                                     </HBox.margin>
+                                 </ImageView>
+                                 <Label onMouseClicked="#seeAllTagsEvent" styleClass="chooseNewDir" text="See All Tags">
+                                     <font>
+                                         <Font name="Calibri Light" size="18.0" />
+                                     </font>
+                                     <HBox.margin>
+                                         <Insets left="10.0" top="4.0" />
+                                     </HBox.margin>
+                                 </Label>
+                             </children>
+                             <VBox.margin>
+                                 <Insets top="10.0" />
+                             </VBox.margin>
+                         </HBox>
+                         <HBox>
+                             <children>
+                                 <ImageView fitHeight="150.0" fitWidth="32.0" onMouseClicked="#seeAllLogsEvent" pickOnBounds="true" preserveRatio="true" styleClass="chooseNewDir">
+                                     <image>
+                                         <Image url="@logsIcon.png" />
+                                     </image>
+                                     <HBox.margin>
+                                         <Insets left="15.0" />
+                                     </HBox.margin>
+                                 </ImageView>
+                                 <Label onMouseClicked="#seeAllLogsEvent" styleClass="chooseNewDir" text="View All Changes">
+                                     <font>
+                                         <Font name="Calibri Light" size="18.0" />
+                                     </font>
+                                     <HBox.margin>
+                                         <Insets left="10.0" top="4.0" />
+                                     </HBox.margin>
+                                 </Label>
+                             </children>
+                             <VBox.margin>
+                                 <Insets top="10.0" />
+                             </VBox.margin>
+                         </HBox>
+                          <TreeView fx:id="dirFolders" prefHeight="410.0" prefWidth="285.0" styleClass="dirFolders" stylesheets="@mainPaneStyle.css">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                          </TreeView>
+                     </children>
+                  </VBox>
+                    </center>
+                </BorderPane>
+            </content>
+        </ScrollPane>
+    </left>
+
+    <center>
+        <ScrollPane fx:id="galleryScroll" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="890.0" styleClass="centerPane">
+            <content>
+                <TilePane fx:id="galleryDisplay" hgap="25.25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="717.0" minWidth="-Infinity" prefColumns="4" prefRows="4" prefTileHeight="120.0" prefTileWidth="190.0" prefWidth="890" styleClass="tileStyle" vgap="30.25">
+                    <padding>
+                        <Insets left="26.25" right="20.25" top="16.25" />
+                    </padding>
+                </TilePane>
+            </content>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@mainPaneStyle.css" />
+    </stylesheets>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand');
+    </style>
+</BorderPane>

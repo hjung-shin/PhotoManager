@@ -1,0 +1,25 @@
+.backIcon {
+    -fx-cursor: hand;
+}
+
+.previousTagIcon {
+    -fx-cursor: hand;
+}
+.movePhotoIcon {
+    -fx-cursor: hand;
+}
+.renamePhotoIcon {
+    -fx-cursor: hand;
+}
+.addTagIcon {
+    -fx-cursor: hand;
+}
+
+.favouriteButton {
+    -fx-cursor: hand;
+}
+
+.tagList {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}

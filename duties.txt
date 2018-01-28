@@ -1,0 +1,22 @@
+Jaehyun Chung (1003358430)
+1. Designed and created the front-end panes using javafx, fxml and css.
+2. Implemented some dynamic styling in the pane controllers.
+3. Connected front end elements to the controller classes' methods.
+4. Implemented front end for the special feature.
+
+Hyun Jung Shin (1003233244)
+1. Implemented the DirectoryManager, Directory, Node classes.
+2. Created all the unit tests for DirectoryManagerTest, DirectoryTest, PhotoTest.
+3. Implemented the backend of the special feature.
+
+Youngsup Shin (1003223086)
+1. Implemented the controller classes. Figured out how to connect backend data and methods to frontend UI.
+2. Created .gitignore file. .gitignore file includes all configuration files created by the program itself and all files and directories created by intellij ide.
+3. Created help.txt file to give instruction for compiling the code.
+4. Created UML Diagram.
+
+Sheeha Kim (1003087401)
+1. Implemented the Photo, PhotoManager, Tag, TagManager and part of User classes. (Coding & Javadoc)
+2. Edited the backend of the special feature.
+3. Fixed and edited the code according to the design pattern.
+

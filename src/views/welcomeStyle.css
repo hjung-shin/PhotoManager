@@ -1,0 +1,8 @@
+.welcomeTitle {
+    -fx-stroke: red;
+}
+
+.welcomeButton {
+    -fx-focus-color: rgb(189, 189, 189);
+    -fx-faint-focus-color: transparent;
+}

@@ -1,0 +1,50 @@
+.mainPane {
+    -fx-box-border: transparent;
+    -fx-background-color: white;
+}
+.centerPane {
+    -fx-background-color: white;
+}
+.leftPane {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: rgb(234, 242, 248);
+}
+.leftPaneTitle {
+    -fx-background-color: rgb(234, 242, 248);
+}
+
+.tileStyle {
+    -fx-background-color: white;
+}
+
+.photoElement {
+    -fx-cursor: hand;
+}
+
+.dTitleTop {
+    -fx-font-family: 'Quicksand', sans-serif;
+    -fx-font-size: 27px;
+}
+
+.dirFolders {
+    -fx-background-color: rgb(234, 242, 248);
+}
+.dirFolders .tree-cell {
+    -fx-background-color: rgb(234, 242, 248);
+    -fx-text-fill: rgb(95, 106, 106);
+    -fx-font-family: 'Quicksand', sans-serif;
+}
+.dirFolders .tree-cell:selected .tree-disclosure-node .arrow {
+    -fx-background-color: black;
+}
+.dirFolders .tree-cell:selected:expanded .tree-disclosure-node .arrow {
+    -fx-background-color: black;
+}
+
+.dirFolders .tree-cell:selected {
+    -fx-text-fill: rgb(33, 47, 60);
+}
+.chooseNewDir {
+    -fx-cursor: hand;
+}

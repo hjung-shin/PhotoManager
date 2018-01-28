@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.WelcomeController">
+  <children>
+    <Text styleClass="welcomeTitle" scaleX="1.2256399815214096" scaleY="1.3116749884433867" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="536.2523193359375" AnchorPane.leftAnchor="393.87" AnchorPane.rightAnchor="269.88" AnchorPane.topAnchor="173.0">
+      <font>
+        <Font size="100.0" />
+      </font>
+    </Text>
+    <Button fx:id="getStartedBtn" styleClass="welcomeButton" contentDisplay="TOP" layoutX="519.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleButtonClick" text="Get Started">
+      <font>
+        <Font size="24.0" />
+      </font>
+      <graphic>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@pantone-2.png" />
+            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@welcomeStyle.css" />
+  </stylesheets>
+</AnchorPane>

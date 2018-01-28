@@ -1,0 +1,12 @@
+How to compile and run your code from the command line?
+
+1. Move to src directory)
+   cd src
+
+2. Compile all files
+   javac -cp ../lib/junit-jupiter-api-5.0.0.jar:lib/opentest4j-1.0.0.jar model/*.java
+   javac controller/*.java
+
+3. Run the program
+   java model.Main
+   
